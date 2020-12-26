@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Visualizar Doenças </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+        <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id='Cabecalho'>
+            <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
+            <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
+            <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
+        </div>
+
+        <div id="Tabela">
+            <br>
+            <p id="nome_tabela">VISUALIZAÇÃO DE DOENÇAS CADASTRADAS</p>
+            <br>
+            <br>
+            <table class="center" rules="all">
+                <thead>
+                    <tr>
+                        <th>Doença</th>
+                        <th>Sintomas</th>
+                        <th id="remover">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for e in doenca %}
+                        <tr>
+                            <td>{{e.nome}}</td>
+                            <td>{{e.sintomas}}</td>
+                            <td><a href="/delete/{{e.id}}">Excluir Regsitro</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        <div id ="btn_retorno">
+            <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
+            <p id="mostrarHora"></p>
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>

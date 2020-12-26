@@ -55,7 +55,7 @@ ROOT_URLCONF = 'PerojetoDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['polls/templates'], #Localização dos arquivos (HTML DO APP)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

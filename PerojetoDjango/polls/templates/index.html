@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Index do Projeto </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+        <link rel="shortcut icon" href="{% static 'grafico.jpg' %}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    </head>
+    <body>
+        <div id='background'> 
+            <div id='Cabecalho'>
+                <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
+                <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
+                <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
+            </div>
+            <div id='Cadastros'>
+                <div id='Buttons_Doenca'>
+                    <p calss="titulos">DOENÇAS</p>
+                    <a href=cadastro_doenca><button class="cadbutton" style="width:220px"> Cadastrar Doenças</button></a>
+                    <a href='visualizacao_doencas'><button type="button" style="width:220px">Visualizar Doenças</button></a>
+                </div>
+                <div id='Buttons_Epidemiologicos'>
+                    <p class="titulos">EPIDEMIAS</p>
+                    <a href='cadastro_epidemiologico'><button type="button" style="width:220px">Cadastrar Dado Epidemiologico</button></a>
+                    <a href='visualizacao_epidemiologica'><button type="button" style="width:220px">Visualizar dados Epidemiologicos</button></a>
+                </div>
+                <p id="mostrarHora"></p>
+            </div>
+        </div>
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>

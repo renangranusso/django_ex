@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Cadastro_Epidemiologico </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+        <link rel="shortcut icon" href="{{url_for('static', filename='grafico.jpg')}}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id='Cabecalho'>
+            <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
+            <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
+            <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
+        </div>
+
+        <div class='Adicionar'>
+            <form action="/cadastro_epidemiologico" id='Adicionar' method="post">
+                <div id="atencao"></div>
+                <div class="Add_data">
+                    <p><h5>Data de coleta</h5></p>
+                    <input type="date" name="data_coleta" id="data_coleta" placeholder="Data da Coleta">
+                </div>
+                <div class="Add_doenca_assoc">
+                    <p><h5>Doença Associada</h5></p>
+                    <input type="text" name="doenca_associada" id="doenca_associada" placeholder="Doença Associada">
+                </div>
+                <br>
+                <div id="BTN_add">
+                    <button class="button_cad">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <div id ="btn_retorno">
+            <a href="index"><button class="Retorno" style="width:220px">Retornar</button></a>
+            <p id="mostrarHora"></p>
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>

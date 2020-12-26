@@ -1,0 +1,226 @@
+
+#background{
+    background-color: rgb(204, 255, 204);
+    border: 4px solid #494949 !important;
+}
+
+#Cabecalho{
+    width: auto;
+    height: 130px;
+    background-color: rgb(204, 255, 204);
+    margin: 0 auto 0 auto
+}
+
+#mostrarHora{
+    text-align: center;
+    font-family: sans-serif;
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background:rgb(204, 255, 204);
+    transition: all 0.4s ease 0s;
+}
+
+#mostrarHora:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
+h1{
+    font-family: sans-serif;
+    background: #222;
+    color: darkred;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+#nome_tabela{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgb(204, 255, 204);
+    font-family: sans-serif;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+#Tabela{
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(204, 255, 204);
+    width: auto;
+}
+
+table{
+    background-color: lightgrey !important;
+}
+
+tr:hover{
+    color: #ffffff !important;
+    background: #606060;
+    transition: all 0.2s ease 0s;
+    border-color: black !important;
+}
+
+h4{
+    text-align: center;
+}
+
+#Cadastros{
+    text-align: Center;
+    width: 100%;
+    margin: 0 auto 0 auto
+}
+
+#Buttons{
+    display: flex;
+    
+}
+
+.table{
+    text-align: Center;
+    width: 100%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-spacing: 5px;
+    text-align: Center;
+  }
+
+#Adicionar{
+    margin-left: 30%;
+    margin-right:30%;
+    border: 4px solid #494949 !important;
+    padding: 1%;
+    text-align: center;
+    background-color: lightgrey !important;
+}
+.Adicionar{
+    background-color:rgb(204, 255, 204);
+}
+.Add_data{
+    display: inline-block;    
+    padding: 1%;  
+}
+
+.Add_doenca_assoc{
+    display: inline-block;    
+    padding: 1%;  
+}
+
+#BTN_add{
+    padding:20px;
+}
+
+.button_cad{
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+.button_cad:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.button_cad_doenca{
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+.button_cad_doenca:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
+
+#btn_retorno{
+    text-align: Center;
+    padding-top: 50px;
+    padding: 5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+    margin-bottom: 50px;
+    background-color: rgb(204, 255, 204);
+}
+
+select{
+    width: 220px;   
+}
+
+#grafico{
+    text-align: Center;
+    padding-top: 50px;
+    padding: 5px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(204, 255, 204);
+}
+
+#Buttons_Doenca{
+    width: auto;
+    text-align: Center;
+    height: auto;
+    background-color: rgb(193, 242, 209);
+    padding-top: 25px;
+    flex: 0 0 50%;
+    display: inline-block;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom:3px solid black;
+    border-left:3px solid black;
+    padding: 5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+}
+
+#Buttons_Doenca:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}
+
+#Buttons_Epidemiologicos{
+    width: auto;
+    text-align: Center;
+    height: auto;
+    background-color: rgb(193, 242, 209);
+    padding-top: 25px;
+    flex: 1;
+    display: inline-block;
+    border-top: 3px solid black;
+    border-bottom:3px solid black;
+    border-right: 3px solid black;
+    border-left:3px solid black;
+    padding:5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+}
+
+#Buttons_Epidemiologicos:hover{
+    color: #ffffff !important;
+    background: #606060;
+    border-color: #A0A0A0 !important;
+    transition: all 0.4s ease 0s;
+}

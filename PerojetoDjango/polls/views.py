@@ -2,5 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('PAGINA INDEX DA APPLICAÇÃO POLLS')
+    return render(request, 'index.html')
 
+def cadastro_doenca(request):
+    return render(request, 'cadastro_doenca.html')
