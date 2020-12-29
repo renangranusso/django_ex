@@ -7,3 +7,5 @@
 #### Commit 2: Pagina Index do projeto Flask + Pagina de cadastro de doneças e aplicação dos arquivos Static (JS e CSS)
 
 #### Commit 3: Navegação completa do Projeto, em todas as templates, através de rotas.
+
+* Obs.: A aplicação POLLS é a aplicação principal, todas as rotas estão sendo direcionadas para a aplicação POLLS.
