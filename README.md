@@ -1,4 +1,4 @@
-# Exemplo de Django
+# Exemplo de Aplicação Django
 
 ## Aplicação criada para converter um Projeto 100% Flask em um Projeto Django!
 
