@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('.button_cad_doenca').on('click', function(e) {
         e.preventDefault();
         var doenca = $('#nome').val();
@@ -9,9 +9,10 @@ $(document).ready(function() {
             $('#sintomas').val("");
             $('#atencao').html('<span style="color: green;">Dados Cadastrados com Sucesso!</span>');
             $.ajax({
-                method: "POST",
-                url: '/processo_doenca',
-                data: { doenca: doenca, sintomas: sintomas}
+                type: "POST",
+                url: '/cadastro_doenca',
+                data: { doenca: doenca, sintomas: sintomas},
+                csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
             });
         }else{
             $('#atencao').html('<span style="color: red;">É necessário preencher todos os campos!</span>');
@@ -38,15 +39,11 @@ $(document).ready(function() {
         }
     });
 });
+*/
 
-var doencas = {};
-$("select[name='doencas'] > option").each(function () {
-    if(doencas[this.text]) {
-        $(this).remove();
-    } else {
-        doencas[this.text] = this.value;
-    }
-});
+function submitForm() {
+    $('form[name="add-form"]').submit();
+  }
 
 var selectedSource;
 function getSelected(){
