@@ -20,9 +20,5 @@ from polls import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('polls/', views.index),
-    path('polls/cad_doenca', views.cadastro_doenca),
-    path('polls/cad_epidemio', views.cadastro_epidemiologico),
-    path('polls/visual_doenca', views.visualizar_doenca),
-    path('polls/visual_epidemio', views.visualizar_epidemio),
+    path('', include('polls.urls'))
 ]
