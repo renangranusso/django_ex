@@ -4,16 +4,18 @@
     <head>
         <meta charset="utf-8"/>
         <title> Cadastro de Doença </title>
+
         {% load static %}
+        
         <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
-        <link rel="shortcut icon" href=""/>
+        <link rel="shortcut icon" href="{% static 'grafico.jpg' %}"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <div id='Cabecalho'>
-            <p class="Titulo"><h1>Trabalho: Dados Epidemiológicos</h1></p>
-            <p><h4>Aluno: Renan Palomino Granusso, RA: 1460481711074</h4></p>
-            <p><h4>Professor: Fabrício Galende Marques de Carvalho</h4></p>
+            <p class="Titulo"><h1>Sistema de inserção de dados para Hospitais</h1></p>
+            <p><h4>Hospital: Unimed</h4></p>
+            <p><h4>Unidade: São José dos Campos</h4></p>
         </div>
         <div class='Adicionar'>
             <form action="/cadastro_doenca" id='Adicionar' method="post">
@@ -33,9 +35,9 @@
             </form>
         </div>
         <div id ="btn_retorno">
-            <a href="index"><button class="Retorno" style="width:220px"> Retornar</button></a>
+            <a href="/polls"><button class="Retorno" style="width:220px"> Retornar</button></a>
             <p id="mostrarHora"></p>
         </div>
-        <script src=""></script>
+        <script src="{% static 'js/script.js' %}"></script>
     </body>
 </html>

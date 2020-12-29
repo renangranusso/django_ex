@@ -25,7 +25,7 @@ SECRET_KEY = 'jvxc4ibcynd_v%(^zaxdd#8nlw(4if724i!y!f+crp0$c1@8b8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] #IP´S disponiveis para acessar o ambiente de desenvolvimento
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
+    'polls', #Local em que está o site do Hospital
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'PerojetoDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['polls/templates'], #Localização dos arquivos (HTML DO APP)
+        'DIRS': ['polls/templates'], #Localização dos arquivos (HTML DA APLICAÇÃO)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,4 +1,4 @@
-from django.db import models
+'''from django.db import models
 
 class Question(models.Model):
     questionText = models.CharField(max_length=100)
@@ -15,3 +15,5 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+'''
