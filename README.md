@@ -8,4 +8,6 @@
 
 #### Commit 3: Navegação completa do Projeto, em todas as templates, através de rotas.
 
+#### Commit 4: Read e Create utilizado banco de dados da aplicação. (sem SQL por enquanto)
+
 * Obs.: A aplicação POLLS é a aplicação principal, todas as rotas estão sendo direcionadas para a aplicação POLLS.
