@@ -18,10 +18,10 @@
             <p><h4>Unidade: São José dos Campos</h4></p>
         </div>
 
-        <!--<div id ="grafico">
+        <div id ="grafico">
             <select id="doencas" name="doencas" onchange="getSelected();">
                     <option value="">Selcione uma Doença!</option>
-                {% for e in Epidemio %}
+                {% for e in epidemio %}
                     <option value="{{ e.doenca_associada }}">{{ e.doenca_associada }}</option>
                 {% endfor %}
             </select>
@@ -34,14 +34,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for e in Epidemio %}
+                    {% for e in epidemio %}
                         <tr>
                             <td>{{e.data_coleta}}</td>
                             <td>{{e.doenca_associada}}</td>
                         </tr>
                     {% endfor %}
             <canvas class="chart-line"></canvas>
-        </div>-->
+        </div>
         
         <div id ="btn_retorno">
             <a href="/"><button class="Retorno" style="width:220px">Retornar</button></a>

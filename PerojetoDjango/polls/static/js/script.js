@@ -45,6 +45,16 @@ function submitForm() {
     $('form[name="add-form"]').submit();
   }
 
+
+var doencas = {};
+$("select[name='doencas'] > option").each(function () {
+    if(doencas[this.text]) {
+        $(this).remove();
+    } else {
+        doencas[this.text] = this.value;
+    }
+});
+
 var selectedSource;
 function getSelected(){
 selectedSource = $("#doencas").val();

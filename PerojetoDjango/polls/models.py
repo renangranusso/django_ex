@@ -9,12 +9,11 @@ class Doenca(models.Model):
         return str(self.nome)
         return str(self.sintomas)
 
-'''class Epidemiologico(db.Model):
-    __tablename__ = 'Epidemiologico'
-    id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-    data_coleta = db.Column(db.String(10))
-    doenca_associada = db.Column(db.String(100))
+class Epidemiologico(models.Model):
+    id = models.AutoField(primary_key=True)
+    data_coleta = models.CharField(max_length=10)
+    doenca_associada = models.CharField(max_length=100)
 
-    def __init__(self, data_coleta, doenca_associada):
-        self.data_coleta = data_coleta
-        self.doenca_associada = doenca_associada'''
+    def __str__(self):
+       return str(self.data_coleta)
+       return str(self.doenca_associada)

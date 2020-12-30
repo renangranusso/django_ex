@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Doenca
-from .forms import doencaForm
+from .models import Doenca, Epidemiologico
+from .forms import doencaForm, epidemioForm
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
@@ -17,12 +17,17 @@ def cadastro_doenca(request):
     return render(request, 'cadastro_doenca.html', {'form': form})
 
 def cadastro_epidemiologico(request):
-    return render(request, 'cadastro_epidemiologico.html')
+    form = epidemioForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(request.path_info)
+    return render(request, 'cadastro_epidemiologico.html', {'form': form})
 
 def visualizar_doenca(request):
     doenca = Doenca.objects.all()
     return render(request, 'visualizacao_doencas.html', {'doenca': doenca})
 
 def visualizar_epidemio(request):
-    #epidemio = epidemio.objects.all()
-    return render(request, 'visualizacao_epidemiologica.html')
+    epidemio = Epidemiologico.objects.all() #select * from
+    return render(request, 'visualizacao_epidemiologica.html', {'epidemio': epidemio})

@@ -16,8 +16,7 @@
             <p><h4>Unidade: São José dos Campos</h4></p>
         </div>
 
-        <div class='Adicionar'>
-            <form action="/cadastro_epidemiologico" id='Adicionar' method="post">
+            <!--<form action="/cadastro_epidemiologico" id='Adicionar' method="post">
                 <div id="atencao"></div>
                 <div class="Add_data">
                     <p><h5>Data de coleta</h5></p>
@@ -31,7 +30,16 @@
                 <div id="BTN_add">
                     <button class="button_cad">Cadastrar</button>
                 </div>
-            </form>
+            </form>-->
+            <div id='Adicionar'>
+                <form name='add-form' method='POST'>
+                    {% csrf_token %}
+                    {{ form }}
+                    <div id="BTN_add">
+                        <button class="button_cad_doenca" onclick='submitForm()'>Cadastrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div id ="btn_retorno">
             <a href="/"><button class="Retorno" style="width:220px">Retornar</button></a>
